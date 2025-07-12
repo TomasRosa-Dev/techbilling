@@ -1,0 +1,48 @@
+{
+  "dashboardMetrics": [
+    {
+      "id": "totalRevenue",
+      "title": "Receita Total",
+      "value": "R$ 70k",
+      "icon": "DollarSign",
+      "trend": {
+        "type": "positive",
+        "value": "+10%",
+        "description": "do mês passado"
+      }
+    },
+    {
+      "id": "activeClients", 
+      "title": "Clientes Ativos",
+      "value": "245",
+      "icon": "Users",
+      "trend": {
+        "type": "positive",
+        "value": "+15%",
+        "description": "do mês passado"
+      }
+    },
+    {
+      "id": "invoicesSent",
+      "title": "Faturas Enviadas", 
+      "value": "156",
+      "icon": "FileText",
+      "trend": {
+        "type": "positive",
+        "value": "+8%",
+        "description": "do mês passado"
+      }
+    },
+    {
+      "id": "conversionRate",
+      "title": "Taxa de Conversão",
+      "value": "89%",
+      "icon": "Activity", 
+      "trend": {
+        "type": "negative",
+        "value": "-2%",
+        "description": "do mês passado"
+      }
+    }
+  ]
+} 

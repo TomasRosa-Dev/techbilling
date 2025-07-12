@@ -1,0 +1,17 @@
+{
+  "monthlyRevenue": [
+    { "month": "Jan", "value": 12000 },
+    { "month": "Feb", "value": 15000 },
+    { "month": "Mar", "value": 13000 },
+    { "month": "Apr", "value": 17000 },
+    { "month": "May", "value": 16000 },
+    { "month": "Jun", "value": 18000 }
+  ],
+  "annualRevenue": [
+    { "year": 2023, "value": 180000 },
+    { "year": 2024, "value": 210000 }
+  ],
+  "invoicesCount": 320,
+  "activeClients": 45
+}
+  
