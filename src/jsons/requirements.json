@@ -1,5 +1,215 @@
 [
-    { "id": 1, "label": "Tax Report Q2", "description": "Tax Report Q2", "deadline": "2025-07-31" },
-    { "id": 2, "label": "Annual Audit", "description": "Annual Audit", "deadline": "2025-12-15" },
-    { "id": 3, "label": "Invoice Documentation", "description": "Invoice Documentation", "deadline": "2025-08-10" }
-  ]
+  {
+    "id": 1,
+    "label": "Tax Report Q2",
+    "description": "Prepare and submit quarterly tax report for Q2 2024",
+    "deadline": "2024-07-31",
+    "status": "completed",
+    "priority": "high",
+    "category": "fiscal",
+    "assignee": "Finance Team",
+    "completedDate": "2024-07-28"
+  },
+  {
+    "id": 2,
+    "label": "Annual Audit",
+    "description": "Conduct annual financial audit and prepare documentation",
+    "deadline": "2025-12-15",
+    "status": "in_progress",
+    "priority": "high",
+    "category": "audit",
+    "assignee": "External Auditor",
+    "progress": 65
+  },
+  {
+    "id": 3,
+    "label": "Invoice Documentation",
+    "description": "Update invoice documentation and templates",
+    "deadline": "2024-08-10",
+    "status": "overdue",
+    "priority": "medium",
+    "category": "documentation",
+    "assignee": "Admin Team",
+    "overdueBy": 45
+  },
+  {
+    "id": 4,
+    "label": "Q3 Tax Report",
+    "description": "Prepare and submit quarterly tax report for Q3 2024",
+    "deadline": "2024-10-31",
+    "status": "completed",
+    "priority": "high",
+    "category": "fiscal",
+    "assignee": "Finance Team",
+    "completedDate": "2024-10-28"
+  },
+  {
+    "id": 5,
+    "label": "Client Payment Terms Review",
+    "description": "Review and update payment terms for all active clients",
+    "deadline": "2025-08-01",
+    "status": "pending",
+    "priority": "medium",
+    "category": "policy",
+    "assignee": "Legal Team"
+  },
+  {
+    "id": 6,
+    "label": "VAT Rate Compliance Check",
+    "description": "Verify VAT rate compliance across all invoices",
+    "deadline": "2025-07-25",
+    "status": "in_progress",
+    "priority": "high",
+    "category": "compliance",
+    "assignee": "Finance Team",
+    "progress": 30
+  },
+  {
+    "id": 7,
+    "label": "Backup System Implementation",
+    "description": "Implement automated backup system for invoice data",
+    "deadline": "2024-10-15",
+    "status": "completed",
+    "priority": "high",
+    "category": "technical",
+    "assignee": "IT Team",
+    "completedDate": "2024-10-12"
+  },
+  {
+    "id": 8,
+    "label": "Customer Credit Assessment",
+    "description": "Assess creditworthiness of new clients for 2025",
+    "deadline": "2025-08-20",
+    "status": "pending",
+    "priority": "medium",
+    "category": "assessment",
+    "assignee": "Finance Team"
+  },
+  {
+    "id": 9,
+    "label": "Software License Renewal",
+    "description": "Renew accounting software licenses for 2025",
+    "deadline": "2025-12-31",
+    "status": "pending",
+    "priority": "high",
+    "category": "licensing",
+    "assignee": "IT Team"
+  },
+  {
+    "id": 10,
+    "label": "Invoice Template Redesign",
+    "description": "Redesign invoice templates for better branding",
+    "deadline": "2025-07-30",
+    "status": "in_progress",
+    "priority": "low",
+    "category": "design",
+    "assignee": "Design Team",
+    "progress": 80
+  },
+  {
+    "id": 11,
+    "label": "Overdue Invoice Collection",
+    "description": "Collect payment for overdue invoices from Q3",
+    "deadline": "2024-11-10",
+    "status": "overdue",
+    "priority": "high",
+    "category": "collection",
+    "assignee": "Finance Team",
+    "overdueBy": 15
+  },
+  {
+    "id": 12,
+    "label": "Monthly Financial Report",
+    "description": "Generate monthly financial report for October 2024",
+    "deadline": "2024-11-05",
+    "status": "completed",
+    "priority": "medium",
+    "category": "reporting",
+    "assignee": "Finance Team",
+    "completedDate": "2024-11-03"
+  },
+  {
+    "id": 13,
+    "label": "Client Communication Strategy",
+    "description": "Develop strategy for late payment communications",
+    "deadline": "2025-08-10",
+    "status": "pending",
+    "priority": "medium",
+    "category": "strategy",
+    "assignee": "Management Team"
+  },
+  {
+    "id": 14,
+    "label": "Year-End Closing Procedures",
+    "description": "Prepare and execute year-end closing procedures",
+    "deadline": "2025-12-31",
+    "status": "pending",
+    "priority": "high",
+    "category": "closing",
+    "assignee": "Finance Team"
+  },
+  {
+    "id": 15,
+    "label": "Security Audit",
+    "description": "Conduct security audit of financial systems",
+    "deadline": "2025-07-20",
+    "status": "in_progress",
+    "priority": "high",
+    "category": "security",
+    "assignee": "IT Team",
+    "progress": 45
+  },
+  {
+    "id": 16,
+    "label": "Tax Rate Updates",
+    "description": "Update system with new tax rates for 2025",
+    "deadline": "2025-12-15",
+    "status": "pending",
+    "priority": "high",
+    "category": "fiscal",
+    "assignee": "Finance Team"
+  },
+  {
+    "id": 17,
+    "label": "Payment Gateway Integration",
+    "description": "Integrate new payment gateway for online payments",
+    "deadline": "2025-08-25",
+    "status": "in_progress",
+    "priority": "medium",
+    "category": "technical",
+    "assignee": "IT Team",
+    "progress": 20
+  },
+  {
+    "id": 18,
+    "label": "Database Optimization",
+    "description": "Optimize database performance for invoice queries",
+    "deadline": "2024-10-30",
+    "status": "completed",
+    "priority": "low",
+    "category": "technical",
+    "assignee": "IT Team",
+    "completedDate": "2024-10-25"
+  },
+  {
+    "id": 19,
+    "label": "Expense Tracking System",
+    "description": "Implement expense tracking for better cost control",
+    "deadline": "2025-08-05",
+    "status": "pending",
+    "priority": "medium",
+    "category": "system",
+    "assignee": "Finance Team"
+  },
+  {
+    "id": 20,
+    "label": "Staff Training Program",
+    "description": "Train staff on new invoice management procedures",
+    "deadline": "2025-07-15",
+    "status": "in_progress",
+    "priority": "medium",
+    "category": "training",
+    "assignee": "HR Team",
+    "progress": 60
+  }
+]

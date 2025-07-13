@@ -24,12 +24,26 @@ const BillingContext = createContext<BillingContextType | undefined>(undefined);
 
 export const BillingProvider = ({ children }: { children: ReactNode }) => {
   const [requirements, setRequirements] = useState<Requirement[]>(
-    requirementsData.map(r => ({ ...r, done: false }))
+    (requirementsData as Requirement[]).map(r => ({ 
+      ...r, 
+      done: r.status === 'completed' // Set done based on status for backward compatibility
+    }))
   );
 
   const toggleRequirement = (id: number) => {
     setRequirements(rs =>
-      rs.map(r => r.id === id ? { ...r, done: !r.done } : r)
+      rs.map(r => {
+        if (r.id === id) {
+          const newStatus = r.status === 'completed' ? 'pending' : 'completed';
+          return { 
+            ...r, 
+            status: newStatus,
+            done: newStatus === 'completed',
+            completedDate: newStatus === 'completed' ? new Date().toISOString().split('T')[0] : undefined
+          };
+        }
+        return r;
+      })
     );
   };
 

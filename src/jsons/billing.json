@@ -1,17 +1,43 @@
 {
   "monthlyRevenue": [
-    { "month": "Jan", "value": 12000 },
-    { "month": "Feb", "value": 15000 },
-    { "month": "Mar", "value": 13000 },
-    { "month": "Apr", "value": 17000 },
-    { "month": "May", "value": 16000 },
-    { "month": "Jun", "value": 18000 }
+    { "month": "Jan", "value": 10258.20 },
+    { "month": "Feb", "value": 6974.10 },
+    { "month": "Mar", "value": 10947.00 },
+    { "month": "Apr", "value": 12300.00 },
+    { "month": "May", "value": 10701.00 },
+    { "month": "Jun", "value": 25754.46 },
+    { "month": "Jul", "value": 16435.40 },
+    { "month": "Aug", "value": 21627.60 },
+    { "month": "Sep", "value": 22043.04 },
+    { "month": "Oct", "value": 21426.00 },
+    { "month": "Nov", "value": 21174.60 },
+    { "month": "Dec", "value": 21830.00 }
   ],
   "annualRevenue": [
-    { "year": 2023, "value": 180000 },
-    { "year": 2024, "value": 210000 }
+    { "year": 2023, "value": 24822.42 },
+    { "year": 2024, "value": 201471.40 }
   ],
-  "invoicesCount": 320,
-  "activeClients": 45
+  "invoicesCount": 38,
+  "activeClients": 32,
+  "revenueGrowth": 711.5,
+  "averageInvoiceValue": 5933.46,
+  "paymentStats": {
+    "paid": 30,
+    "pending": 5,
+    "overdue": 3
+  },
+  "topCustomers": [
+    { "name": "HealthTech SA", "revenue": 17548.00 },
+    { "name": "MediaTech Studios", "revenue": 14688.96 },
+    { "name": "EnergyTech Solutions", "revenue": 13530.00 },
+    { "name": "AI Solutions SA", "revenue": 12300.00 },
+    { "name": "TextileTech Manufacturing", "revenue": 10465.00 }
+  ],
+  "quarterlyBreakdown": {
+    "Q1": 28179.30,
+    "Q2": 48755.46,
+    "Q3": 60105.64,
+    "Q4": 64430.60
+  }
 }
   

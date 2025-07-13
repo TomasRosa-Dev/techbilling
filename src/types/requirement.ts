@@ -3,5 +3,12 @@ export interface Requirement {
   label: string;
   description: string;
   deadline: string;
-  done: boolean;
+  status: "completed" | "in_progress" | "pending" | "overdue";
+  priority: "high" | "medium" | "low";
+  category: string;
+  assignee: string;
+  progress?: number;
+  completedDate?: string;
+  overdueBy?: number;
+  done?: boolean; 
 }

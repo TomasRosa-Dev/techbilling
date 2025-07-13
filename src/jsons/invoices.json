@@ -1,0 +1,823 @@
+[
+  {
+    "id": "INV-2024-001",
+    "customer": "TechCorp Lda",
+    "customerEmail": "contato@techcorp.pt",
+    "customerAddress": "Rua da Tecnologia, 123\n1000-001 Lisboa",
+    "date": "2024-01-15",
+    "items": [
+      {
+        "desc": "Desenvolvimento de aplicação web personalizada",
+        "qty": 1,
+        "price": 850.00
+      },
+      {
+        "desc": "Consultoria em arquitetura de sistemas",
+        "qty": 8,
+        "price": 50.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-002",
+    "customer": "Digital Solutions SA",
+    "customerEmail": "financeiro@digitalsolutions.pt",
+    "customerAddress": "Avenida da Liberdade, 456\n1250-096 Lisboa",
+    "date": "2024-01-20",
+    "items": [
+      {
+        "desc": "Implementação de sistema de gestão",
+        "qty": 1,
+        "price": 1500.00
+      },
+      {
+        "desc": "Formação técnica da equipa",
+        "qty": 4,
+        "price": 125.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 5,
+    "status": "pending"
+  },
+  {
+    "id": "INV-2024-003",
+    "customer": "Innovation Labs",
+    "customerEmail": "admin@innovationlabs.pt",
+    "customerAddress": "Praça do Comércio, 789\n4000-001 Porto",
+    "date": "2024-01-10",
+    "items": [
+      {
+        "desc": "Auditoria de segurança informática",
+        "qty": 1,
+        "price": 600.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "overdue"
+  },
+  {
+    "id": "INV-2024-004",
+    "customer": "StartupHub",
+    "customerEmail": "billing@startuphub.pt",
+    "customerAddress": "Rua do Ouro, 321\n3000-300 Coimbra",
+    "date": "2024-01-25",
+    "items": [
+      {
+        "desc": "Desenvolvimento de API REST",
+        "qty": 1,
+        "price": 2200.00
+      },
+      {
+        "desc": "Integração com serviços externos",
+        "qty": 3,
+        "price": 300.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 10,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-005",
+    "customer": "CloudTech Enterprise",
+    "customerEmail": "finance@cloudtech.pt",
+    "customerAddress": "Alameda dos Oceanos, 654\n1990-207 Lisboa",
+    "date": "2024-01-28",
+    "items": [
+      {
+        "desc": "Migração para cloud infrastructure",
+        "qty": 1,
+        "price": 1200.00
+      },
+      {
+        "desc": "Monitorização e suporte mensal",
+        "qty": 6,
+        "price": 100.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "pending"
+  },
+  {
+    "id": "INV-2024-006",
+    "customer": "WebDesign Pro",
+    "customerEmail": "contato@webdesignpro.pt",
+    "customerAddress": "Praça da República, 101\n1050-190 Lisboa",
+    "date": "2024-02-05",
+    "items": [
+      {
+        "desc": "Design de website institucional",
+        "qty": 1,
+        "price": 1800.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-007",
+    "customer": "E-commerce Solutions",
+    "customerEmail": "billing@ecommerce.pt",
+    "customerAddress": "Rua do Comércio, 250\n1100-068 Lisboa",
+    "date": "2024-02-15",
+    "items": [
+      {
+        "desc": "Loja online completa",
+        "qty": 1,
+        "price": 3500.00
+      },
+      {
+        "desc": "Sistema de pagamentos",
+        "qty": 1,
+        "price": 800.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 10,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-008",
+    "customer": "Mobile Apps Ltd",
+    "customerEmail": "finance@mobileapps.pt",
+    "customerAddress": "Avenida da Boavista, 3477\n4100-140 Porto",
+    "date": "2024-03-10",
+    "items": [
+      {
+        "desc": "Aplicação mobile iOS/Android",
+        "qty": 1,
+        "price": 4500.00
+      },
+      {
+        "desc": "Testes e deployment",
+        "qty": 1,
+        "price": 600.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-009",
+    "customer": "DataAnalytics Co",
+    "customerEmail": "accounting@dataanalytics.pt",
+    "customerAddress": "Rua da Inovação, 42\n2795-242 Carnaxide",
+    "date": "2024-03-25",
+    "items": [
+      {
+        "desc": "Dashboard de analytics",
+        "qty": 1,
+        "price": 2800.00
+      },
+      {
+        "desc": "Relatórios automatizados",
+        "qty": 1,
+        "price": 1200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 5,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-010",
+    "customer": "AI Solutions SA",
+    "customerEmail": "billing@aisolutions.pt",
+    "customerAddress": "Rua da Inteligência, 88\n1000-201 Lisboa",
+    "date": "2024-04-08",
+    "items": [
+      {
+        "desc": "Sistema de IA personalizado",
+        "qty": 1,
+        "price": 8000.00
+      },
+      {
+        "desc": "Training e suporte",
+        "qty": 1,
+        "price": 2000.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-011",
+    "customer": "SecureNet Systems",
+    "customerEmail": "finance@securenet.pt",
+    "customerAddress": "Rua da Segurança, 123\n4200-438 Porto",
+    "date": "2024-05-05",
+    "items": [
+      {
+        "desc": "Auditoria de segurança",
+        "qty": 1,
+        "price": 3200.00
+      },
+      {
+        "desc": "Implementação de firewall",
+        "qty": 1,
+        "price": 1800.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-012",
+    "customer": "DevOps Masters",
+    "customerEmail": "accounting@devopsmasters.pt",
+    "customerAddress": "Avenida dos Aliados, 456\n4000-064 Porto",
+    "date": "2024-05-18",
+    "items": [
+      {
+        "desc": "Pipeline CI/CD",
+        "qty": 1,
+        "price": 2500.00
+      },
+      {
+        "desc": "Monitorização de sistemas",
+        "qty": 1,
+        "price": 1200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "overdue"
+  },
+  {
+    "id": "INV-2024-013",
+    "customer": "FinTech Solutions",
+    "customerEmail": "billing@fintech.pt",
+    "customerAddress": "Rua das Finanças, 789\n1200-109 Lisboa",
+    "date": "2024-06-02",
+    "items": [
+      {
+        "desc": "Sistema de pagamentos digitais",
+        "qty": 1,
+        "price": 5500.00
+      },
+      {
+        "desc": "Integração bancária",
+        "qty": 1,
+        "price": 2200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 5,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-014",
+    "customer": "EduTech Platform",
+    "customerEmail": "finance@edutech.pt",
+    "customerAddress": "Avenida da Educação, 456\n3000-132 Coimbra",
+    "date": "2024-06-15",
+    "items": [
+      {
+        "desc": "Plataforma de e-learning",
+        "qty": 1,
+        "price": 6800.00
+      },
+      {
+        "desc": "Sistema de avaliação",
+        "qty": 1,
+        "price": 1200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-015",
+    "customer": "HealthTech SA",
+    "customerEmail": "contabilidade@healthtech.pt",
+    "customerAddress": "Rua da Saúde, 321\n4200-465 Porto",
+    "date": "2024-06-20",
+    "items": [
+      {
+        "desc": "Sistema de gestão hospitalar",
+        "qty": 1,
+        "price": 12000.00
+      },
+      {
+        "desc": "Módulo de telemedicina",
+        "qty": 1,
+        "price": 3500.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 8,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-016",
+    "customer": "RetailTech Lda",
+    "customerEmail": "financeiro@retailtech.pt",
+    "customerAddress": "Praça do Comércio, 654\n1100-148 Lisboa",
+    "date": "2024-07-05",
+    "items": [
+      {
+        "desc": "Sistema POS personalizado",
+        "qty": 1,
+        "price": 3200.00
+      },
+      {
+        "desc": "Integração com inventário",
+        "qty": 1,
+        "price": 1800.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-017",
+    "customer": "LogisTech Solutions",
+    "customerEmail": "billing@logistech.pt",
+    "customerAddress": "Rua da Logística, 987\n2795-195 Carnaxide",
+    "date": "2024-07-12",
+    "items": [
+      {
+        "desc": "Sistema de gestão de frotas",
+        "qty": 1,
+        "price": 4500.00
+      },
+      {
+        "desc": "Tracking em tempo real",
+        "qty": 1,
+        "price": 2000.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 5,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-018",
+    "customer": "TourismTech Co",
+    "customerEmail": "accounting@tourismtech.pt",
+    "customerAddress": "Avenida do Turismo, 234\n8000-107 Faro",
+    "date": "2024-07-25",
+    "items": [
+      {
+        "desc": "Plataforma de reservas",
+        "qty": 1,
+        "price": 5800.00
+      },
+      {
+        "desc": "Sistema de pagamentos",
+        "qty": 1,
+        "price": 1500.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 10,
+    "status": "pending"
+  },
+  {
+    "id": "INV-2024-019",
+    "customer": "AgriTech Systems",
+    "customerEmail": "finance@agritech.pt",
+    "customerAddress": "Rua da Agricultura, 567\n7000-854 Évora",
+    "date": "2024-08-08",
+    "items": [
+      {
+        "desc": "Sistema de monitorização de culturas",
+        "qty": 1,
+        "price": 7200.00
+      },
+      {
+        "desc": "Sensores IoT",
+        "qty": 15,
+        "price": 80.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-020",
+    "customer": "EnergyTech Solutions",
+    "customerEmail": "billing@energytech.pt",
+    "customerAddress": "Avenida da Energia, 890\n1000-156 Lisboa",
+    "date": "2024-08-15",
+    "items": [
+      {
+        "desc": "Sistema de gestão energética",
+        "qty": 1,
+        "price": 8500.00
+      },
+      {
+        "desc": "Dashboard de monitorização",
+        "qty": 1,
+        "price": 2500.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-021",
+    "customer": "SportsTech Arena",
+    "customerEmail": "contabilidade@sportstech.pt",
+    "customerAddress": "Rua do Desporto, 123\n4000-195 Porto",
+    "date": "2024-08-28",
+    "items": [
+      {
+        "desc": "App de gestão desportiva",
+        "qty": 1,
+        "price": 4200.00
+      },
+      {
+        "desc": "Sistema de reservas",
+        "qty": 1,
+        "price": 1800.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 5,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-022",
+    "customer": "MediaTech Studios",
+    "customerEmail": "finance@mediatech.pt",
+    "customerAddress": "Avenida da Comunicação, 456\n1050-234 Lisboa",
+    "date": "2024-09-05",
+    "items": [
+      {
+        "desc": "Plataforma de streaming",
+        "qty": 1,
+        "price": 9500.00
+      },
+      {
+        "desc": "Sistema de CDN",
+        "qty": 1,
+        "price": 3200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 8,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-023",
+    "customer": "LegalTech Partners",
+    "customerEmail": "billing@legaltech.pt",
+    "customerAddress": "Rua da Justiça, 789\n3000-456 Coimbra",
+    "date": "2024-09-18",
+    "items": [
+      {
+        "desc": "Sistema de gestão jurídica",
+        "qty": 1,
+        "price": 6500.00
+      },
+      {
+        "desc": "Módulo de documentos",
+        "qty": 1,
+        "price": 2200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-024",
+    "customer": "PropTech Solutions",
+    "customerEmail": "accounting@proptech.pt",
+    "customerAddress": "Avenida dos Imóveis, 321\n1200-789 Lisboa",
+    "date": "2024-09-25",
+    "items": [
+      {
+        "desc": "Portal imobiliário",
+        "qty": 1,
+        "price": 5200.00
+      },
+      {
+        "desc": "Sistema de CRM",
+        "qty": 1,
+        "price": 2800.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 5,
+    "status": "pending"
+  },
+  {
+    "id": "INV-2024-025",
+    "customer": "FoodTech Delivery",
+    "customerEmail": "finance@foodtech.pt",
+    "customerAddress": "Rua da Gastronomia, 654\n4000-321 Porto",
+    "date": "2024-10-08",
+    "items": [
+      {
+        "desc": "App de delivery",
+        "qty": 1,
+        "price": 7800.00
+      },
+      {
+        "desc": "Sistema de tracking",
+        "qty": 1,
+        "price": 1200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-026",
+    "customer": "AutoTech Services",
+    "customerEmail": "billing@autotech.pt",
+    "customerAddress": "Avenida Automóvel, 987\n2700-456 Amadora",
+    "date": "2024-10-15",
+    "items": [
+      {
+        "desc": "Sistema de oficina automotiva",
+        "qty": 1,
+        "price": 4800.00
+      },
+      {
+        "desc": "Módulo de diagnóstico",
+        "qty": 1,
+        "price": 1600.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-027",
+    "customer": "BeautyTech Solutions",
+    "customerEmail": "contabilidade@beautytech.pt",
+    "customerAddress": "Rua da Beleza, 234\n1000-789 Lisboa",
+    "date": "2024-10-22",
+    "items": [
+      {
+        "desc": "App de agendamento",
+        "qty": 1,
+        "price": 3500.00
+      },
+      {
+        "desc": "Sistema de fidelização",
+        "qty": 1,
+        "price": 1800.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 10,
+    "status": "overdue"
+  },
+  {
+    "id": "INV-2024-028",
+    "customer": "EventTech Productions",
+    "customerEmail": "finance@eventtech.pt",
+    "customerAddress": "Avenida dos Eventos, 567\n3000-123 Coimbra",
+    "date": "2024-11-05",
+    "items": [
+      {
+        "desc": "Plataforma de eventos",
+        "qty": 1,
+        "price": 6200.00
+      },
+      {
+        "desc": "Sistema de bilheteira",
+        "qty": 1,
+        "price": 2400.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "pending"
+  },
+  {
+    "id": "INV-2024-029",
+    "customer": "TextileTech Manufacturing",
+    "customerEmail": "accounting@textiletech.pt",
+    "customerAddress": "Rua da Indústria, 890\n4760-789 Vila Nova de Famalicão",
+    "date": "2024-11-12",
+    "items": [
+      {
+        "desc": "Sistema de produção têxtil",
+        "qty": 1,
+        "price": 8900.00
+      },
+      {
+        "desc": "Controlo de qualidade",
+        "qty": 1,
+        "price": 2100.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 5,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-030",
+    "customer": "CleanTech Solutions",
+    "customerEmail": "billing@cleantech.pt",
+    "customerAddress": "Avenida da Sustentabilidade, 123\n1000-456 Lisboa",
+    "date": "2024-11-25",
+    "items": [
+      {
+        "desc": "Sistema de gestão ambiental",
+        "qty": 1,
+        "price": 5600.00
+      },
+      {
+        "desc": "Monitorização de resíduos",
+        "qty": 1,
+        "price": 1400.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "pending"
+  },
+  {
+    "id": "INV-2024-031",
+    "customer": "PetTech Care",
+    "customerEmail": "finance@pettech.pt",
+    "customerAddress": "Rua dos Animais, 456\n4000-567 Porto",
+    "date": "2024-12-08",
+    "items": [
+      {
+        "desc": "App de cuidados veterinários",
+        "qty": 1,
+        "price": 4200.00
+      },
+      {
+        "desc": "Sistema de agendamento",
+        "qty": 1,
+        "price": 1600.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2024-032",
+    "customer": "MusicTech Studios",
+    "customerEmail": "contabilidade@musictech.pt",
+    "customerAddress": "Avenida da Música, 789\n1200-345 Lisboa",
+    "date": "2024-12-15",
+    "items": [
+      {
+        "desc": "Plataforma de streaming musical",
+        "qty": 1,
+        "price": 7500.00
+      },
+      {
+        "desc": "Sistema de royalties",
+        "qty": 1,
+        "price": 2500.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 8,
+    "status": "pending"
+  },
+  {
+    "id": "INV-2023-001",
+    "customer": "TechCorp Lda",
+    "customerEmail": "contato@techcorp.pt",
+    "customerAddress": "Rua da Tecnologia, 123\n1000-001 Lisboa",
+    "date": "2023-02-15",
+    "items": [
+      {
+        "desc": "Website corporativo",
+        "qty": 1,
+        "price": 2500.00
+      },
+      {
+        "desc": "Manutenção anual",
+        "qty": 1,
+        "price": 600.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2023-002",
+    "customer": "Digital Solutions SA",
+    "customerEmail": "financeiro@digitalsolutions.pt",
+    "customerAddress": "Avenida da Liberdade, 456\n1250-096 Lisboa",
+    "date": "2023-04-20",
+    "items": [
+      {
+        "desc": "Sistema de inventário",
+        "qty": 1,
+        "price": 3500.00
+      },
+      {
+        "desc": "Formação de utilizadores",
+        "qty": 2,
+        "price": 200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 5,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2023-003",
+    "customer": "Innovation Labs",
+    "customerEmail": "admin@innovationlabs.pt",
+    "customerAddress": "Praça do Comércio, 789\n4000-001 Porto",
+    "date": "2023-06-10",
+    "items": [
+      {
+        "desc": "Prototipo de aplicação",
+        "qty": 1,
+        "price": 4200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2023-004",
+    "customer": "CloudTech Enterprise",
+    "customerEmail": "finance@cloudtech.pt",
+    "customerAddress": "Alameda dos Oceanos, 654\n1990-207 Lisboa",
+    "date": "2023-08-25",
+    "items": [
+      {
+        "desc": "Consultoria cloud",
+        "qty": 1,
+        "price": 1800.00
+      },
+      {
+        "desc": "Implementação inicial",
+        "qty": 1,
+        "price": 2200.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 0,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2023-005",
+    "customer": "StartupHub",
+    "customerEmail": "billing@startuphub.pt",
+    "customerAddress": "Rua do Ouro, 321\n3000-300 Coimbra",
+    "date": "2023-10-15",
+    "items": [
+      {
+        "desc": "MVP development",
+        "qty": 1,
+        "price": 5500.00
+      },
+      {
+        "desc": "Testing and deployment",
+        "qty": 1,
+        "price": 800.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 10,
+    "status": "paid"
+  },
+  {
+    "id": "INV-2023-006",
+    "customer": "WebDesign Pro",
+    "customerEmail": "contato@webdesignpro.pt",
+    "customerAddress": "Praça da República, 101\n1050-190 Lisboa",
+    "date": "2023-12-05",
+    "items": [
+      {
+        "desc": "E-commerce platform",
+        "qty": 1,
+        "price": 6200.00
+      },
+      {
+        "desc": "SEO optimization",
+        "qty": 1,
+        "price": 800.00
+      }
+    ],
+    "vatRate": 23,
+    "discount": 5,
+    "status": "paid"
+  }
+] 

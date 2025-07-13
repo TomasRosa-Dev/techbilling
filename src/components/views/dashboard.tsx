@@ -1,102 +1,139 @@
 "use client"
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts"
 import { MetricCard } from "@/components/common/MetricCard"
+import { RevenueChart } from "./RevenueChart"
+import { RecentInvoices } from "./RecentInvoices"
+import { useInvoice } from "@/context/invoiceContext"
+import { useBilling } from "@/context/billingContext"
+import { calculateDashboardMetrics } from "@/lib/dashboard-metrics"
 import { Metric } from "@/types/metrics"
-import metricsData from "@/jsons/metrics.json"
+import { useMemo } from "react"
 
-const chartData = [
-  { month: "Jan", value: 2400 },
-  { month: "Feb", value: 1398 },
-  { month: "Mar", value: 9800 },
-  { month: "Apr", value: 3908 },
-  { month: "May", value: 4800 },
-  { month: "Jun", value: 3800 },
-  { month: "Jul", value: 4300 },
-]
-
-const recentInvoices = [
-  { id: "INV-001", client: "Empresa ABC", amount: "R$ 2.500", status: "Pago" },
-  { id: "INV-002", client: "Empresa XYZ", amount: "R$ 1.200", status: "Pendente" },
-  { id: "INV-003", client: "Empresa 123", amount: "R$ 3.400", status: "Pago" },
-  { id: "INV-004", client: "Empresa DEF", amount: "R$ 800", status: "Vencido" },
-  { id: "INV-005", client: "Empresa GHI", amount: "R$ 1.900", status: "Pago" },
-]
-
-const chartConfig = {
-  value: {
-    label: "Receita",
-    color: "hsl(var(--primary))",
+const fallbackInvoiceMetrics: Metric[] = [
+  {
+    id: "totalRevenue",
+    title: "Receita Total",
+    value: "€ 0,00",
+    icon: "DollarSign",
+    description: "Faturas pagas",
+    trend: {
+      type: "positive",
+      value: "0%",
+      description: "do mês passado"
+    }
   },
-}
+  {
+    id: "totalInvoices", 
+    title: "Total de Faturas",
+    value: "0",
+    icon: "FileText",
+    description: "Faturas criadas",
+    trend: {
+      type: "positive",
+      value: "0",
+      description: "pagas"
+    }
+  },
+  {
+    id: "pendingInvoices",
+    title: "Pendentes", 
+    value: "€ 0,00",
+    icon: "Clock",
+    description: "0 faturas",
+    variant: "info"
+  },
+  {
+    id: "overdueInvoices",
+    title: "Em Atraso",
+    value: "€ 0,00",
+    icon: "AlertTriangle",
+    description: "0 faturas",
+    variant: "default"
+  }
+]
+
+const fallbackRequirementsMetrics: Metric[] = [
+  {
+    id: "progress",
+    title: "Progresso Geral de Compliance",
+    value: "0/0",
+    icon: "CheckCircle",
+    variant: "progress",
+    description: "0% concluído",
+    progress: {
+      current: 0,
+      total: 0,
+      percentage: 0
+    }
+  },
+  {
+    id: "upcoming",
+    title: "Próximos Deadlines",
+    value: "0",
+    icon: "Clock",
+    variant: "info",
+    description: "Próximos 30 dias"
+  },
+  {
+    id: "overdue",
+    title: "Em Atraso",
+    value: "0",
+    icon: "AlertTriangle",
+    variant: "default",
+    description: "Tudo em dia"
+  }
+]
 
 export function DashboardView() {
-  const metrics = metricsData.dashboardMetrics as Metric[]
+  const { savedInvoices } = useInvoice()
+  const { requirements } = useBilling()
+  
+  const dashboardData = useMemo(() => {
+    if (savedInvoices.length === 0) {
+      return {
+        invoiceMetrics: fallbackInvoiceMetrics,
+        requirementsMetrics: fallbackRequirementsMetrics,
+        chartData: { monthly: [], quarterly: [], yearly: [] },
+        recentInvoices: [],
+        totals: {
+          totalRevenue: 0,
+          pendingAmount: 0,
+          overdueAmount: 0,
+          totalInvoices: 0,
+          paidInvoices: 0,
+          pendingInvoices: 0,
+          overdueInvoices: 0
+        }
+      }
+    }
+    return calculateDashboardMetrics(savedInvoices, requirements)
+  }, [savedInvoices, requirements])
+
+  const allMetrics = useMemo(() => {
+    return [...dashboardData.invoiceMetrics, ...dashboardData.requirementsMetrics.slice(0, 2)]
+  }, [dashboardData])
 
   return (
-    <div className="p-6 space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {metrics.map((metric) => (
+    <div className="space-y-6">
+      <div className="mb-6">
+        <h1 className="text-2xl font-bold mb-2">Dashboard</h1>
+        <p className="text-muted-foreground">
+          Visão geral da sua faturação e requisitos de compliance
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {allMetrics.map((metric) => (
           <MetricCard key={metric.id} metric={metric} />
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <Card className="md:col-span-2">
-          <CardHeader>
-            <CardTitle>Receita Mensal</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ChartContainer config={chartConfig} className="h-[300px]">
-              <LineChart data={chartData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="month" />
-                <YAxis />
-                <ChartTooltip content={<ChartTooltipContent />} />
-                <Line 
-                  type="monotone" 
-                  dataKey="value" 
-                  stroke="var(--color-value)" 
-                  strokeWidth={2}
-                  dot={{ fill: "var(--color-value)" }}
-                />
-              </LineChart>
-            </ChartContainer>
-          </CardContent>
-        </Card>
-
-        <Card className="md:col-span-2">
-          <CardHeader>
-            <CardTitle>Faturas Recentes</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {recentInvoices.map((invoice) => (
-                <div key={invoice.id} className="flex items-center justify-between">
-                  <div className="flex flex-col">
-                    <p className="text-sm font-medium">{invoice.id}</p>
-                    <p className="text-xs text-muted-foreground">{invoice.client}</p>
-                  </div>
-                  <div className="flex flex-col items-end">
-                    <p className="text-sm font-medium">{invoice.amount}</p>
-                    <span className={`text-xs px-2 py-1 rounded-full ${
-                      invoice.status === 'Pago' 
-                        ? 'bg-green-100 text-green-800' 
-                        : invoice.status === 'Pendente'
-                        ? 'bg-yellow-100 text-yellow-800'
-                        : 'bg-red-100 text-red-800'
-                    }`}>
-                      {invoice.status}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <RevenueChart dashboardData={dashboardData} />
+        <RecentInvoices recentInvoices={dashboardData.recentInvoices} />
       </div>
+
+      
     </div>
   )
 }
