@@ -1,0 +1,25 @@
+name: Hello (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      who:
+        description: Who to greet
+        type: string
+        default: world
+      shout:
+        description: Uppercase the greeting
+        type: boolean
+        default: false
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          MSG="Hello, ${{ inputs.who }}"
+          if [ "${{ inputs.shout }}" = "true" ]; then
+            echo "$MSG" | tr '[:lower:]' '[:upper:]'
+          else
+            echo "$MSG"
+          fi
